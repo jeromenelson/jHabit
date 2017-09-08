@@ -1,0 +1,66 @@
+<html>
+<head> 
+	<script type="text/javascript" src="js/jquery-1.7.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="js/jquery.viewport.js" ></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js" ></script>
+	<script type="text/javascript" src="js/jns.gallerylist.js" ></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/graph.js" ></script>
+	<script type="text/javascript" src="js/api.js" ></script>
+	<script type="text/javascript" src="js/lab.exif.js" ></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9392292-6']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+		
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<title>Your Photo Habit</title>
+</head>
+<body>
+    <div id="body1">
+	<div class="header">
+		<div class="title">your.photo.habit</div>
+		
+		<div> 
+			<a id="info" title="Information"></a><a id="api-type" title="API Type"></a><input type="text" id="pic_url"><span id="url-list" class="trans"></span> 
+			<input type="button" class="button" id="btn_okay" value="Go" autocomplete="off"> 
+			<div id="drop-down"></div> 
+		</div>
+		
+		<div class="header-bottom">
+			<a id="pull-down" class="trans" title="Show header"></a>
+		</div>
+	</div>
+	
+	<span id="prog-bg">
+		<span id="prog-bar"><span id="prog-text">Loading...</span></span>
+	</span>
+	
+	<div id="profile-header">
+		<div><img id="profile-pic" onError="this.src='img/profile.png'"></div>
+		<div>
+			<a id="show-stats" class="trans" title="Show Stats"></a><br>
+			<a id="show-gallery" class="trans" title="Show Gallery"></a>
+		</div>
+		<div id="profile-info"></div>
+	</div>
+	<div id="gallery-content" class="main-content"><ul id="ul_img_gallery" class="ul_img_list"></ul></div>
+	<div id="exif-content" class="main-content"></div>
+	
+	<div id="info-bg" class="info-el"></div>
+	<div id="info-cont" class="info-el"></div>
+	</div>
+	
+	<div id="body2"><div>
+	
+</body>
+</html>
